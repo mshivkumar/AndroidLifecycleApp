@@ -5,33 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Text oneText oneText oneText oneText oneText oneText oneText oneText oneText oneText oneText oneText oneText oneText oneText one"
-        android:textSize="40sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:id="@+id/text_two"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Text two"
-        android:textSize="40sp"
-        app:layout_constraintLeft_toRightOf="@+id/text_one"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/text_three"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Text three"
-        android:textSize="40sp"
-        app:layout_constraintLeft_toRightOf="@+id/text_two"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
