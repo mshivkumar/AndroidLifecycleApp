@@ -10,11 +10,11 @@
         android:id="@+id/checkbox_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="106dp"
-        android:layout_marginTop="175dp"
-        android:layout_marginEnd="185dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Checkbox one"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkbox_two"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,23 +22,47 @@
         android:id="@+id/checkbox_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="Checkbox two"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/checkbox_one"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/checkbox_one"
-        app:layout_constraintTop_toBottomOf="@+id/checkbox_one"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_one"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_one"
+        app:layout_constraintTop_toTopOf="@+id/checkbox_one" />
 
     <Button
         android:id="@+id/check_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="231dp"
+        android:layout_marginEnd="16dp"
         android:text="Check"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/checkbox_two"
-        app:layout_constraintStart_toStartOf="@+id/checkbox_two"
-        app:layout_constraintTop_toBottomOf="@+id/checkbox_two" />
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_two"
+        app:layout_constraintTop_toTopOf="@+id/checkbox_two" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_two">
+
+        <RadioButton
+            android:id="@+id/radio_button_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton Two" />
+
+        <RadioButton
+            android:id="@+id/radio_button_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton One" />
+
+    </RadioGroup>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
